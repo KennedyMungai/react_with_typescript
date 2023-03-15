@@ -23,12 +23,10 @@ interface SearchRepositoriesErrorAction
     payload: string
 }
 
-interface Action
-{
+const reducer = (
+    state: RepositoriesState,
     action: SearchRepositoriesAction | SearchRepositoriesErrorAction | SearchRepositoriesSuccessAction
-}
-
-const reducer = (state: RepositoriesState, action: Action): RepositoriesState =>
+): RepositoriesState =>
 {
     switch (action.type)
     {
