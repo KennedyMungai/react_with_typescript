@@ -4,7 +4,12 @@ import React from 'react'
 const RepositoriesList = () =>
 {
     return (
-        <div>RepositoriesList</div>
+        <div>
+            <form action="">
+                <input type="text" />
+                <button>Search</button>
+            </form>
+        </div>
     )
 }
 
