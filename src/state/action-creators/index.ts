@@ -7,6 +7,10 @@ const searchRepositories = (term: string) =>
 {
     return async (dispatch: any) => 
     {
-
+        dispatch(
+            {
+                type: ActionType.SEARCH_REPOSITORIES
+            }
+        )
     }
 }
