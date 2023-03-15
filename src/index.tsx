@@ -1,12 +1,4 @@
-import ReactDOM from "react-dom"
+import ReactDOM from 'react-dom';
+import App from './components/App';
 
-const App = () =>
-{
-  return (
-    <div>
-      <h1>This is the end</h1>
-    </div>
-  )
-}
-
-ReactDOM.render(<App />, document.getElementById('root'))
+ReactDOM.render(<App />, document.querySelector('#root'));
