@@ -1,4 +1,6 @@
-const index = () =>
+import ReactDOM from "react-dom"
+
+const App = () =>
 {
   return (
     <div>
@@ -7,4 +9,4 @@ const index = () =>
   )
 }
 
-export default index
+ReactDOM.render(<App />, document.getElementById('root'))
