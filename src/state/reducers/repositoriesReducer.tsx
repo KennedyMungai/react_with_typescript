@@ -8,10 +8,11 @@ interface RepositoriesState
 
 interface Action
 {
-
+    type: string
+    payload?: any
 }
 
-const reducer = (state: RepositoriesState, action: any): RepositoriesState =>
+const reducer = (state: RepositoriesState, action: Action): RepositoriesState =>
 {
     switch (action.type)
     {
