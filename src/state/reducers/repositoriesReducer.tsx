@@ -23,11 +23,11 @@ interface SearchRepositoriesErrorAction
     payload: string
 }
 
+type Action = SearchRepositoriesAction | SearchRepositoriesErrorAction | SearchRepositoriesSuccessAction
+
 const reducer = (
     state: RepositoriesState,
-    action: SearchRepositoriesAction |
-        SearchRepositoriesErrorAction |
-        SearchRepositoriesSuccessAction
+    action: Action
 ): RepositoriesState =>
 {
     switch (action.type)
