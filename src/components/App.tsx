@@ -5,7 +5,11 @@ import { store } from "../state"
 const App = () =>
 {
     return (
-        <h1>Hi!</h1>
+        <Provider store={store}>
+            <div className="">
+                <h1>Search for a package</h1>
+            </div>
+        </Provider>
     )
 }
 
