@@ -1,4 +1,5 @@
-import { Action, ActionType } from "../actions"
+import { ActionType } from "../action-types"
+import { Action } from "../actions"
 
 interface RepositoriesState
 {
