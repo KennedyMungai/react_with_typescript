@@ -6,6 +6,11 @@ interface RepositoriesState
     data: string[]
 }
 
+interface Action
+{
+
+}
+
 const reducer = (state: RepositoriesState, action: any): RepositoriesState =>
 {
     switch (action.type)
