@@ -12,5 +12,18 @@ const searchRepositories = (term: string) =>
                 type: ActionType.SEARCH_REPOSITORIES
             }
         )
+
+        try
+        {
+
+        } catch (error: any)
+        {
+            dispatch(
+                {
+                    type: ActionType.SEARCH_REPOSITORIES_ERROR,
+                    payload: error.message
+                }
+            )
+        }
     }
 }
