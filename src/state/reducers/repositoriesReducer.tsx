@@ -1,3 +1,4 @@
+import { Action, ActionType } from "../actions"
 
 interface RepositoriesState
 {
@@ -5,10 +6,6 @@ interface RepositoriesState
     error: string | null
     data: string[]
 }
-
-
-type Action = SearchRepositoriesAction | SearchRepositoriesErrorAction | SearchRepositoriesSuccessAction
-
 
 const reducer = (
     state: RepositoriesState,
