@@ -1,6 +1,4 @@
-import React, { FormEvent, useState } from 'react'
-import { useDispatch } from 'react-redux'
-import { actionCreators } from '../state'
+import { FormEvent, useState } from 'react'
 
 
 const RepositoriesList = () =>
