@@ -1,14 +1,18 @@
 import { FormEvent, useState } from 'react'
 import { useActions } from '../hooks/useActions'
+import { searchRepositories } from '../state/action-creators/index';
 
 
 const RepositoriesList = () =>
 {
     const [term, setTerm] = useState<string>("")
+    const { searchRepositories } = useActions()
 
     const submitHandler = (e: FormEvent<HTMLFormElement>) => 
     {
         e.preventDefault()
+
+        searchRepositories(term)
     }
 
     return (
