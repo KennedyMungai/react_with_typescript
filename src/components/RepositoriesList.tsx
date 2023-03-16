@@ -8,7 +8,11 @@ const RepositoriesList = () =>
     return (
         <div>
             <form action="">
-                <input type="text" />
+                <input
+                    type="text"
+                    value={term}
+                    onChange={e => setTerm(e.target.value)}
+                />
                 <button>Search</button>
             </form>
         </div>
