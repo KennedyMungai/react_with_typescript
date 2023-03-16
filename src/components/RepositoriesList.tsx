@@ -3,6 +3,8 @@ import React, { useState } from 'react'
 
 const RepositoriesList = () =>
 {
+    const [term, setTerm] = useState<string>("")
+
     return (
         <div>
             <form action="">
