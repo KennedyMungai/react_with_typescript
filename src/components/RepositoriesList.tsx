@@ -5,13 +5,9 @@ const RepositoriesList = () =>
 {
     const [term, setTerm] = useState<string>("")
 
-    const dispatch = useDispatch()
-
     const submitHandler = (e: FormEvent<HTMLFormElement>) => 
     {
         e.preventDefault()
-
-        dispatch(actionCreators.searchRepositories(term))
     }
 
     return (
