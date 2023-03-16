@@ -9,7 +9,7 @@ const RepositoriesList = () =>
 
     const { searchRepositories } = useActions()
 
-    const state = useSelector((state: any) => state.repositories)
+    const { data, error, loading } = useSelector((state: any) => state.repositories)
 
     const submitHandler = (e: FormEvent<HTMLFormElement>) => 
     {
