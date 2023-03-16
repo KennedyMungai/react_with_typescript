@@ -7,7 +7,7 @@ const RepositoriesList = () =>
 
     const submitHandler = (e: FormEvent<HTMLFormElement>) => 
     {
-
+        e.preventDefault()
     }
 
     return (
