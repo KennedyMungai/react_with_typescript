@@ -1,6 +1,5 @@
 import { FormEvent, useState } from 'react'
 import { useActions } from '../hooks/useActions'
-import { searchRepositories } from '../state/action-creators/index';
 
 
 const RepositoriesList = () =>
