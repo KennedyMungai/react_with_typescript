@@ -6,7 +6,10 @@ import { useActions } from '../hooks/useActions'
 const RepositoriesList = () =>
 {
     const [term, setTerm] = useState<string>("")
+
     const { searchRepositories } = useActions()
+
+    const state = useSelector((state) => state.repositories)
 
     const submitHandler = (e: FormEvent<HTMLFormElement>) => 
     {
