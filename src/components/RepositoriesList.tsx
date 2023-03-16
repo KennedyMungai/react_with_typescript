@@ -1,13 +1,21 @@
-import React, { useState } from 'react'
+import React, { FormEvent, useState } from 'react'
 
 
 const RepositoriesList = () =>
 {
     const [term, setTerm] = useState<string>("")
 
+    const submitHandler = (e: FormEvent<HTMLFormElement>) => 
+    {
+
+    }
+
     return (
         <div>
-            <form action="">
+            <form
+                action=""
+                onSubmit={submitHandler}
+            >
                 <input
                     type="text"
                     value={term}
