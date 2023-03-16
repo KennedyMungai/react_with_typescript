@@ -12,6 +12,8 @@ const RepositoriesList = () =>
     const submitHandler = (e: FormEvent<HTMLFormElement>) => 
     {
         e.preventDefault()
+
+        dispatch(actionCreators.searchRepositories(term))
     }
 
     return (
